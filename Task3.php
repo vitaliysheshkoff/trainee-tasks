@@ -10,7 +10,6 @@ class Task3
             throw new \InvalidArgumentException();
         }
 
-
         while ($inputNumber > 9) {
             $sum = 0;
             $n = strlen((string)$inputNumber);
