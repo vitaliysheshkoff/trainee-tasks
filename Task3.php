@@ -4,9 +4,9 @@ namespace src;
 
 class Task3
 {
-    public function main(int $inputNumber): int
+    public function main($inputNumber): int
     {
-        if ($inputNumber < 0) {
+        if (!is_int($inputNumber) || $inputNumber < 10) {
             throw new \InvalidArgumentException();
         }
 
