@@ -6,6 +6,10 @@ class Task5
 {
     public function main(int $n): string
     {
+        if ($n < 0) {
+            throw new \InvalidArgumentException();
+        }
+
         $previous = 0;
         $next = 1;
         $result = 0;
