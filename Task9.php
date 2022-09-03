@@ -11,7 +11,7 @@ class Task9
 
         for ($i = 0; $i < $len - 2; $i++) {
             if (($arr[$i] + $arr[$i + 1] + $arr[$i + 2]) == $number) {
-                $res[] = "{$arr[$i]} + {$arr[$i + 2]} + {$arr[$i + 2]} = {$number}";
+                $res[] = "{$arr[$i]} + {$arr[$i + 1]} + {$arr[$i + 2]} = {$number}";
             }
         }
 
