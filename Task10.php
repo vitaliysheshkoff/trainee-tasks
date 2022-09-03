@@ -4,7 +4,7 @@ namespace src;
 
 class Task10
 {
-    public function main(int $input): string
+    public function main(int $input): array
     {
         if ($input < 1) {
             throw new \InvalidArgumentException();
@@ -22,6 +22,6 @@ class Task10
             $result[] = $input;
         }
 
-        return print_r($result, true);
+        return $result;
     }
 }
