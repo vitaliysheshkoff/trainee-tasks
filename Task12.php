@@ -6,7 +6,7 @@ class Task12
 {
     private int $firstValue;
     private int $secondValue;
-    private float $result;
+    private int $result;
 
     public function __construct(int $firstValue, int $secondValue)
     {
@@ -52,6 +52,10 @@ class Task12
 
     public function divide(): Task12
     {
+
+        if($this->secondValue === 0)
+            throw new \InvalidArgumentException('division by zero');
+
         if (isset($this->result)) {
             $this->result /= ($this->firstValue / $this->secondValue);
         } else {
@@ -63,6 +67,9 @@ class Task12
 
     public function divideBy(int $number): Task12
     {
+        if($number === 0)
+            throw new \InvalidArgumentException('division by zero');
+
         $this->result /= $number;
 
         return $this;
