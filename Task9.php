@@ -4,7 +4,7 @@ namespace src;
 
 class Task9
 {
-    public function main(array $arr, int $number): string
+    public function main(array $arr, int $number): array
     {
         /*if (count($arr) < 3 || $number <= 0 || !$this->checkISArrayPositive($arr)) {
             throw new \InvalidArgumentException();
@@ -23,6 +23,6 @@ class Task9
             throw new \InvalidArgumentException();
         }
 
-        return print_r($res, true);
+        return $res;
     }
 }
