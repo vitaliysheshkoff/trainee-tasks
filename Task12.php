@@ -16,11 +16,7 @@ class Task12
 
     public function add(): Task12
     {
-        if (isset($this->result)) {
-            $this->result += ($this->firstValue + $this->secondValue);
-        } else {
-            $this->result = $this->firstValue + $this->secondValue;
-        }
+        $this->result = $this->firstValue + $this->secondValue;
 
         return $this;
     }
@@ -34,11 +30,7 @@ class Task12
 
     public function multiply(): Task12
     {
-        if (isset($this->result)) {
-            $this->result *= ($this->firstValue * $this->secondValue);
-        } else {
-            $this->result = $this->firstValue * $this->secondValue;
-        }
+        $this->result = $this->firstValue * $this->secondValue;
 
         return $this;
     }
@@ -56,11 +48,7 @@ class Task12
             throw new \InvalidArgumentException('division by zero');
         }
 
-        if (isset($this->result)) {
-            $this->result /= ($this->firstValue / $this->secondValue);
-        } else {
-            $this->result = $this->firstValue / $this->secondValue;
-        }
+        $this->result = $this->firstValue / $this->secondValue;
 
         return $this;
     }
@@ -78,11 +66,7 @@ class Task12
 
     public function subtract(): Task12
     {
-        if (isset($this->result)) {
-            $this->result -= ($this->firstValue - $this->secondValue);
-        } else {
-            $this->result = $this->firstValue - $this->secondValue;
-        }
+        $this->result = $this->firstValue - $this->secondValue;
 
         return $this;
     }
